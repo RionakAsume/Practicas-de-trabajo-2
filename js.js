@@ -26,8 +26,7 @@ function datosPrueba() {
         Proveedor: "Un Ramdon",
         CantidadInicialStock: 10,
 
-    }
-    ]
+    }]
     return alumnos
 
 }
@@ -122,9 +121,9 @@ function botonPrueba() {
 
 // Esto solo se tiene que ejecutar una vez (Investigar como hacerlo)
 
-// if (!localStorage.getItem("Puebas")) {
-//     localStorage.setItem("Prueba", JSON.stringify(datosPrueba()))
-// }
+if (!localStorage.getItem("Prueba")) {
+    localStorage.setItem("Prueba", JSON.stringify(datosPrueba()))
+}
 
 
 
