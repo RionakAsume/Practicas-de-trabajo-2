@@ -119,6 +119,9 @@ function botonPrueba() {
 
 };
 
+
+// Esto solo se tiene que ejecutar una vez (Investigar como hacerlo)
+
 // if (!localStorage.getItem("Puebas")) {
 //     localStorage.setItem("Prueba", JSON.stringify(datosPrueba()))
 // }
