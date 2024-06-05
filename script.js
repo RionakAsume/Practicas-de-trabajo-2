@@ -22,7 +22,7 @@ function borrar(){
     let codigo1 = Number(prompt("Ingrese el codigo del producto a eliminar"))
     console.log(codigo1);
     productos1.forEach((producto,index)=>{
-        var contador = 0
+        let contador = 0
         if (producto[0]==codigo1){
             productos1.splice(index,1);
             localStorage.setItem("Productos",JSON.stringify(productos1))
@@ -39,7 +39,7 @@ function modificar(){
     let codigo1 = Number(prompt("Ingrese el codigo del producto a modificar"))
     console.log(codigo1);
     productos1.forEach((producto,index)=>{
-        
+         let contador = 0
         if (producto[0]==codigo1){
             productos1[index][1] = prompt("Ingrese el nombre")
             productos1[index][2] = prompt("Ingrese la descripción")
@@ -49,9 +49,12 @@ function modificar(){
             productos1[index][6] = Number(prompt("Ingrese la cantidad incial en stock"))
             localStorage.setItem("Productos", JSON.stringify(productos1))
             alert("La propiedad se modifico")
+            contador = 1
         }
     })
-    
+    if(contador==0){
+        alert("No se encontro un producto con ese codigo")
+    }
 }
 function mostrarProductos() {
     productos1 = JSON.parse(localStorage.getItem("Productos"))
