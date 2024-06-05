@@ -14,16 +14,16 @@ gestión de productos (alta, baja, modificación y el control de stock). 🔴
 • Implementar un diseño responsive que se adapte a diferentes dispositivos.🔴
 
 • Permitir al usuario registrar nuevos productos, incluyendo nombre,
-descripción, precio, categoría, proveedor y cantidad inicial en stock. 🟢
+descripción, precio, categoría, proveedor y cantidad inicial en stock. 🟢 x falta login
 
-• Permitir al usuario modificar la información de los productos existentes.🔴
+• Permitir al usuario modificar la información de los productos existentes.🔴 x
 
-• Permitir al usuario eliminar productos del inventario.🔴
+• Permitir al usuario eliminar productos del inventario.🔴 x
 
 • Implementar un sistema de control de stock que permita registrar entradas
 y salidas de productos, actualizar el stock en tiempo real y generar alertas
 cuando el stock de un producto es bajo. (Esto ultimo puede hacerlo en la
-vista que tendrá el usuario al elegir productos) 🔴
+vista que tendrá el usuario al elegir productos) 🔴 x (Azu)
 
 • Validar los datos ingresados en los formularios (nombre, descripción,
 precio, cantidad). 🔴/🟢 //Lo hice pero no con un formulario tendre que cambiarlo despues
@@ -31,6 +31,6 @@ precio, cantidad). 🔴/🟢 //Lo hice pero no con un formulario tendre que camb
 • Almacenar los datos de los productos en el navegador utilizando
 localStorage o alguna BD que maneje. 🟢
 
-• Implementar un sistema de búsqueda de productos. 🔴
+• Implementar un sistema de búsqueda de productos. 🔴 x
 
-• Mostrar los productos de forma ordenada y atractiva. 🔴
+• Mostrar los productos de forma ordenada y atractiva. 🟢 falta ordenar
