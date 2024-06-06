@@ -31,6 +31,6 @@ precio, cantidad). 🔴/🟢 //Lo hice pero no con un formulario tendre que camb
 • Almacenar los datos de los productos en el navegador utilizando
 localStorage o alguna BD que maneje. 🟢
 
-• Implementar un sistema de búsqueda de productos. 🔴 x
+• Implementar un sistema de búsqueda de productos. 🔴 x (jakoo)
 
 • Mostrar los productos de forma ordenada y atractiva. 🟢 falta ordenar x Crud
