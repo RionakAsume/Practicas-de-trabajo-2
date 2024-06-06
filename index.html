@@ -1,31 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css.css">
-    <style>
-        section{
-           width: 100%;
-           display: flex;
-           justify-content: center;
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="./css.css">
+   <style>
+      body{
+         height: 1000px;
+      }
+      section {
+         width: 100%;
+         display: flex;
+         justify-content: center;
+
+      }
+
+      table,
+      th,
+      td {
+         border: 2px solid black;
+         border-collapse: collapse;
+      }
+
+      td {
+         text-align: center;
+      }
+
+      .CRUD {
+         width: 100vw;
+         display: flex;
+         flex-direction: column;
+         margin-top: 20px;
+         margin-left: 20px;
+      }
+
+      .botones {
+         width: 100px;
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+
+      }
+      .formparacrear{
+         width: 100%;
          
-        }
-        table,th,td{
-           border: 2px solid black;
-           border-collapse: collapse;
-        }
-        td{
-           text-align: center;
-        }
-       </style>
+      }
+      #productoForm{
+         width: 20%;
+         display: flex;
+         flex-direction: column;
+      }
+      #productoForm button{
+         width: 100px;
+         margin-bottom: 20px;
+      }
+   </style>
 </head>
+
 <body>
-    <Button onclick="actializarDatos()">actualizar</Button>
-    <button onclick="botonPrueba()">Prueba</button>
-    <button></button>
-    <div></div>
-    <script src="/js.js"></script>
+   <div class="CRUD">
+      <div class="formparacrear">
+         <form id="productoForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+
+            <label for="descripcion">Descripción:</label>
+            <input type="text" id="descripcion" name="descripcion" required><br>
+
+            <label for="precio">Precio:</label>
+            <input type="number" id="precio" name="precio" required><br>
+
+            <label for="categoria">Categoría:</label>
+            <input type="text" id="categoria" name="categoria" required><br>
+
+            <label for="proveedor">Proveedor:</label>
+            <input type="text" id="proveedor" name="proveedor" required><br>
+
+            <label for="cantidadStock">Cantidad Inicial en Stock:</label>
+            <input type="number" id="cantidadStock" name="cantidadStock" required><br>
+
+            <Button type="submit" onclick="crearDatos()">crear</Button>
+         </form>
+      </div>
+      <div class="botones">
+         <Button onclick="eliminarDatos()">eliminar</Button>
+         <Button onclick="cambiarDatos()">cambiar</Button>
+         <button onclick="generarYEliminarTablas()">generar</button>
+      </div>
+   </div>
+
+   <div></div>
+   <script src="./Javascript/CRUD.js"></script>
+   <script src="./Javascript/busqueda.js"></script>
+   <script src="./Javascript/CRUD.js"></script>
+   <script src="./Javascript/generacionDeDatos.js"></script>
+   <script src="./Javascript/registerLogin.js"></script>
+   <script src="./Javascript/controlStock.js"></script>
 </body>
+
 </html>

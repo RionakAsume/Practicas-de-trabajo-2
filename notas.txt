@@ -8,29 +8,45 @@ productos disponibles, identificar productos con bajo stock, optimizar las
 compras y evitar pérdidas por roturas o vencimientos.
 Requerimientos del proyecto:
 
-• Crear las páginas HTML para el inicio de sesión, el panel principal, la
-gestión de productos (alta, baja, modificación y el control de stock). 🔴 x falta login
+//Parte de FRONT END
 
-• Implementar un diseño responsive que se adapte a diferentes dispositivos.🔴
+    • Crear las páginas HTML para el inicio de sesión, el panel principal, la
+    gestión de productos (alta, baja, modificación y el control de stock). 🔴 x falta login
 
-• Permitir al usuario registrar nuevos productos, incluyendo nombre,
-descripción, precio, categoría, proveedor y cantidad inicial en stock. 🟢 x Crud
+    • Implementar un diseño responsive que se adapte a diferentes dispositivos.🔴
 
-• Permitir al usuario modificar la información de los productos existentes.🔴 x Crud
 
-• Permitir al usuario eliminar productos del inventario.🔴 x Crud
+-------------------------------------------------------------------------------------------
+//COMPLETADAS
+        //Parte Crud completada 🟢
+
+                • Permitir al usuario registrar nuevos productos, incluyendo nombre,
+                descripción, precio, categoría, proveedor y cantidad inicial en stock. 🟢 x Crud
+
+                • Permitir al usuario modificar la información de los productos existentes.🟢 x Crud
+
+                • Permitir al usuario eliminar productos del inventario.🟢 x Crud
+
+                • Mostrar los productos de forma ordenada y atractiva. 🟢 //falta ordenar x Crud
+
+    • Validar los datos ingresados en los formularios (nombre, descripción,
+    precio, cantidad). 🟢
+
+    • Almacenar los datos de los productos en el navegador utilizando
+    localStorage o alguna BD que maneje. 🟢
+
+// a realizar
 
 • Implementar un sistema de control de stock que permita registrar entradas
 y salidas de productos, actualizar el stock en tiempo real y generar alertas
 cuando el stock de un producto es bajo. (Esto ultimo puede hacerlo en la
 vista que tendrá el usuario al elegir productos) 🔴 x (Azu)
 
-• Validar los datos ingresados en los formularios (nombre, descripción,
-precio, cantidad). 🔴/🟢 //Lo hice pero no con un formulario tendre que cambiarlo despues
-
-• Almacenar los datos de los productos en el navegador utilizando
-localStorage o alguna BD que maneje. 🟢
 
 • Implementar un sistema de búsqueda de productos. 🔴 x (jakoo)
 
-• Mostrar los productos de forma ordenada y atractiva. 🟢 falta ordenar x Crud
+
+
+• El registro y el login de usuario x 🔴
+
+

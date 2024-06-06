@@ -1,4 +1,4 @@
-//Parte del Reed
+//Parte del Read
 
 function tablas() {
 
@@ -25,8 +25,8 @@ function tablas() {
 
 
     const table = padre.querySelector('table');
-    const asdasd = JSON.parse(localStorage.getItem("Prueba"));
-    asdasd.forEach(element => {
+    const recuperacionObjeto = JSON.parse(localStorage.getItem("Prueba"));
+    recuperacionObjeto.forEach(element => {
         const trs = document.createElement('tr');
         trs.innerHTML = `
         <td>${element.nombre}</td>
@@ -42,27 +42,128 @@ function tablas() {
     });
 
 }
+//es lo que esta haciendo el boton de generar
+function generarYEliminarTablas() {
+
+    const selecionarSection = document.querySelector(".prueba");
+    if (!selecionarSection) {
+
+        tablas()
+
+    } else {
+        selecionarSection.innerHTML = ""
+        selecionarSection.remove();
+
+    }
+
+
+};
 
 //parte del create
 
 function crearDatos() {
-    const NombreProduc = prompt("Ingrese el NombreProduc :");
-    const Descripcion = prompt("Ingrese la Descripcion");
-    const Precio = prompt("Ingrese Precio");
-    const Categoria = prompt("Ingrese la Categoria :");
-    const Proveedor = prompt("Ingrese la proveedor ");
-    const CantidadInicialStock = prompt("Ingrese el CantidadInicialStock");
 
-    const asdasd = JSON.parse(localStorage.getItem("Prueba"));
+    document.getElementById('productoForm').addEventListener('submit', function (event) {
 
-    const nuevaPropiedad = { NombreProduc, Descripcion, Precio, Categoria, Proveedor, CantidadInicialStock };
-    asdasd.push(nuevaPropiedad);
+        event.preventDefault();
 
-    localStorage.setItem("Prueba", JSON.stringify(asdasd))
+        const nombre = document.getElementById('nombre').value;
+        const descripcion = document.getElementById('descripcion').value;
+        const precio = document.getElementById('precio').value;
+        const categoria = document.getElementById('categoria').value;
+        const proveedor = document.getElementById('proveedor').value;
+        const cantidadStock = document.getElementById('cantidadStock').value;
+
+        const nuevaPropiedad = {
+            nombre,
+            descripcion,
+            precio,
+            categoria,
+            proveedor,
+            cantidadStock
+        };
+
+
+        const recuperacionObjeto = JSON.parse(localStorage.getItem('Prueba')) || [];
+
+        recuperacionObjeto.push(nuevaPropiedad);
+
+        localStorage.setItem('Prueba', JSON.stringify(recuperacionObjeto));
+
+        alert('Producto agregado exitosamente');
+
+
+        document.getElementById('productoForm').reset();
+    });
+
 }
+
 
 //parte del delete
 
 
+function eliminarDatos() {
+    const nombreProducto = prompt("Ingrese el Nombre del producto a eliminar");
+    const recuperacionObjeto = JSON.parse(localStorage.getItem("Prueba"));
+
+    if (!recuperacionObjeto) {
+        alert("No hay productos para eliminar");
+        return;
+    }
+
+    const productoEncontrado = false;
+
+
+    for (let i = 0; i < recuperacionObjeto.length; i++) {
+        if (recuperacionObjeto[i].nombre == nombreProducto) {
+            recuperacionObjeto.splice(i, 1);
+            localStorage.setItem("Prueba", JSON.stringify(recuperacionObjeto));
+            alert("El producto se eliminó");
+            productoEncontrado = true;
+            break;
+        }
+    }
+
+    if (!productoEncontrado) {
+        alert("No se encontró un producto con ese nombre");
+    }
+}
+
 //parte del update
 
+function cambiarDatos() {
+    const nombreProducto = prompt("Ingrese el Nombre del producto a modificar");
+    const recuperacionObjeto = JSON.parse(localStorage.getItem("Prueba"));
+
+    if (!recuperacionObjeto) {
+        alert("No hay productos para modificar");
+        return;
+    }
+
+    let productoEncontrado = false;
+
+    for (let i = 0; i < recuperacionObjeto.length; i++) {
+        if (recuperacionObjeto[i].nombre == nombreProducto) {
+            const nuevaDescripcion = prompt("Ingrese la nueva Descripción:");
+            const nuevoPrecio = prompt("Ingrese el nuevo Precio:");
+            const nuevaCategoria = prompt("Ingrese la nueva Categoría:");
+            const nuevoProveedor = prompt("Ingrese el nuevo Proveedor:");
+            const nuevaCantidadInicialStock = prompt("Ingrese la nueva Cantidad Inicial en Stock:");
+
+
+
+            recuperacionObjeto[i].descripcion = nuevaDescripcion;
+            recuperacionObjeto[i].precio = parseFloat(nuevoPrecio);
+            recuperacionObjeto[i].categoria = nuevaCategoria;
+            recuperacionObjeto[i].proveedor = nuevoProveedor;
+            recuperacionObjeto[i].cantidadStock = parseInt(nuevaCantidadInicialStock);
+
+            productoEncontrado = true;
+            
+            
+            localStorage.setItem("Prueba", JSON.stringify(recuperacionObjeto));
+            break;
+        }
+        
+    }
+}
