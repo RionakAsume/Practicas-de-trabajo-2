@@ -47,6 +47,6 @@ vista que tendrá el usuario al elegir productos) 🔴 x (Azu)
 
 
 
-• El registro y el login de usuario x 🔴
+• El registro y el login de usuario x 🔴(Kuschinski)
 
 
