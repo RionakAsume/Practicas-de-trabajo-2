@@ -70,7 +70,7 @@ function crearDatos() {
         const proveedor = document.getElementById('proveedor').value;
         const cantidadStock = document.getElementById('cantidadStock').value;
 
-        const nuevaPropiedad = {
+        const nuevoProducto = {
             nombre,
             descripcion,
             precio,
@@ -82,7 +82,7 @@ function crearDatos() {
 
         const recuperacionObjeto = JSON.parse(localStorage.getItem('Prueba')) || [];
 
-        recuperacionObjeto.push(nuevaPropiedad);
+        recuperacionObjeto.push(nuevoProducto);
 
         localStorage.setItem('Prueba', JSON.stringify(recuperacionObjeto));
 
