@@ -159,4 +159,8 @@ function cambiarDatos() {
         }
         
     }
+    if (!productoEncontrado) {
+        alert("No se encontró un producto con ese nombre");
+    }
+
 }
