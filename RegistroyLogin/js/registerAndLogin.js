@@ -24,7 +24,7 @@ function Logear(){
         console.log(cuenta[0],cuenta[1])
         if (cuenta[0]==mail&&cuenta[1]==contrasenia){
             contador = 1
-            alert("Inicio Sesion")
+            location.href="./index2.html"//Aca se debe colocar la direccion de la pagina a la que se accedera
             
             
         }
