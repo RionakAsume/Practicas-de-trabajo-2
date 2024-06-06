@@ -1,5 +1,5 @@
 //Parte del Read
-
+//creacion de las tablas
 function tablas() {
 
     const pruebaDiv = document.querySelector("DIV")
@@ -15,9 +15,7 @@ function tablas() {
             <th>Precio</th>
             <th>Categoria</th>
             <th>Proveedor</th>
-            <th>cantidadStock</th>
-           
-            
+            <th>cantidadStock</th>           
         </tr>
     </table>
 `;
@@ -34,9 +32,7 @@ function tablas() {
         <td>${element.precio}</td>
         <td>${element.categoria}</td>
         <td>${element.proveedor}</td>
-        <td>${element.cantidadStock}</td>
-     
-   
+        <td>${element.cantidadStock}</td>     
         `;
         table.appendChild(trs);
     });
@@ -150,8 +146,6 @@ function cambiarDatos() {
             const nuevoProveedor = prompt("Ingrese el nuevo Proveedor:");
             const nuevaCantidadInicialStock = prompt("Ingrese la nueva Cantidad Inicial en Stock:");
 
-
-
             recuperacionObjeto[i].descripcion = nuevaDescripcion;
             recuperacionObjeto[i].precio = parseFloat(nuevoPrecio);
             recuperacionObjeto[i].categoria = nuevaCategoria;
@@ -159,8 +153,7 @@ function cambiarDatos() {
             recuperacionObjeto[i].cantidadStock = parseInt(nuevaCantidadInicialStock);
 
             productoEncontrado = true;
-            
-            
+                       
             localStorage.setItem("Prueba", JSON.stringify(recuperacionObjeto));
             break;
         }
