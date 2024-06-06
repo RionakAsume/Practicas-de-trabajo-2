@@ -47,7 +47,7 @@ cuando el stock de un producto es bajo. (Esto ultimo puede hacerlo en la
 vista que tendrá el usuario al elegir productos) 🔴 x (Azu)
 
 
-• Implementar un sistema de búsqueda de productos. 🔴 x (jakoo)
+• Implementar un sistema de búsqueda de productos. 🔴 x (jakoo) hahaha
 
 
 
