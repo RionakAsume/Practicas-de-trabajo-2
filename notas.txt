@@ -35,6 +35,8 @@ Requerimientos del proyecto:
     • Almacenar los datos de los productos en el navegador utilizando
     localStorage o alguna BD que maneje. 🟢
 
+    • El registro y el login de usuario x 🟢(Kuschinski)
+
 // a realizar
 
 • Implementar un sistema de control de stock que permita registrar entradas
@@ -47,6 +49,6 @@ vista que tendrá el usuario al elegir productos) 🔴 x (Azu)
 
 
 
-• El registro y el login de usuario x 🟢(Kuschinski)
+
 
 
