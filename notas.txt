@@ -51,7 +51,9 @@ Requerimientos del proyecto:
 
 - 0
 
+// a realizar
 
+-0
 
 
 
