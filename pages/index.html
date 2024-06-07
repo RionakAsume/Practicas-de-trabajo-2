@@ -14,6 +14,7 @@
          width: 100%;
          display: flex;
          justify-content: center;
+         margin-bottom: 10px;
 
       }
 
@@ -56,6 +57,16 @@
          width: 100px;
          margin-bottom: 10px;
       }
+      .busqueda{
+         display: flex;
+         flex-direction: row;
+         width: 210px;
+         gap: 10px;
+
+      }
+      .busqueda button{
+         width: 100px;
+      }
    </style>
 </head>
 
@@ -85,8 +96,13 @@
          </form>
       </div>
       <div class="botones">
-         <Button onclick="eliminarDatos()">Eliminar</Button>
-         <Button onclick="cambiarDatos()">Cambiar</Button>
+         <div class="busqueda">
+            <button onclick="busqueda()">buscar</button>
+            <button onclick="generarYEliminarTablas1()">actualizar tabla</button>
+         </div>
+         
+         <button onclick="eliminarDatos()">Eliminar</button>
+         <button onclick="cambiarDatos()">Cambiar</button>
          <button onclick="controlStock()">Compra</button>
          <button onclick="generarYEliminarTablas()">Generar</button>
       </div>
@@ -95,7 +111,6 @@
    <div></div>
    <script src="../Javascript/CRUD.js"></script>
    <script src="../Javascript/busqueda.js"></script>
-   <script src="../Javascript/CRUD.js"></script>
    <script src="../Javascript/generacionDeDatos.js"></script>
 
    <script src="../Javascript/controlStock.js"></script>
