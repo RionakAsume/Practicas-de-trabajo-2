@@ -17,7 +17,7 @@ Requerimientos del proyecto:
 
 
 -------------------------------------------------------------------------------------------
-//Parte del back_end
+//Parte del back_end 🟢 COMPLETADA
 
 //COMPLETADAS
         //Parte Crud completada 🟢
@@ -37,17 +37,19 @@ Requerimientos del proyecto:
     • Almacenar los datos de los productos en el navegador utilizando
     localStorage o alguna BD que maneje. 🟢
 
-    • El registro y el login de usuario x 🟢(Kuschinski)
+    • El registro y el login de usuario x (Kuschinski)🟢
+
+    • Implementar un sistema de control de stock que permita registrar entradas
+    y salidas de productos, actualizar el stock en tiempo real y generar alertas
+    cuando el stock de un producto es bajo. (Esto ultimo puede hacerlo en la
+    vista que tendrá el usuario al elegir productos) 🟢 x (Azu)
+
+
+    • Implementar un sistema de búsqueda de productos. 🟢 x (jakoo)
 
 // a realizar
 
-• Implementar un sistema de control de stock que permita registrar entradas
-y salidas de productos, actualizar el stock en tiempo real y generar alertas
-cuando el stock de un producto es bajo. (Esto ultimo puede hacerlo en la
-vista que tendrá el usuario al elegir productos) 🔴 x (Azu)
-
-
-• Implementar un sistema de búsqueda de productos. 🔴 x (jakoo)
+- 0
 
 
 
