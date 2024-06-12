@@ -34,8 +34,13 @@
          </form>
       </div>
       <div class="botones">
-         <Button onclick="eliminarDatos()">Eliminar</Button>
-         <Button onclick="cambiarDatos()">Cambiar</Button>
+         <div class="busqueda">
+            <button onclick="busqueda()">buscar</button>
+            <button onclick="generarYEliminarTablas1()">actualizar tabla</button>
+         </div>
+         
+         <button onclick="eliminarDatos()">Eliminar</button>
+         <button onclick="cambiarDatos()">Cambiar</button>
          <button onclick="controlStock()">Compra</button>
          <button onclick="generarYEliminarTablas()">Generar</button>
       </div>
@@ -44,7 +49,6 @@
    <div></div>
    <script src="../Javascript/CRUD.js"></script>
    <script src="../Javascript/busqueda.js"></script>
-   <script src="../Javascript/CRUD.js"></script>
    <script src="../Javascript/generacionDeDatos.js"></script>
 
    <script src="../Javascript/controlStock.js"></script>

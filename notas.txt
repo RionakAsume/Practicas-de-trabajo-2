@@ -41,10 +41,11 @@ Requerimientos del proyecto:
     y salidas de productos, actualizar el stock en tiempo real y generar alertas
     cuando el stock de un producto es bajo. (Esto ultimo puede hacerlo en la
     vista que tendrá el usuario al elegir productos) 🟢 x (Azu) 
+    • Implementar un sistema de búsqueda de productos. 🟢 x (jakoo)
 
 // a realizar
 
-• Implementar un sistema de búsqueda de productos. 🔴 x (jakoo)
+
 
 
 
