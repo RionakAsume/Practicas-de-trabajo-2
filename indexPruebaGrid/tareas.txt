@@ -1,0 +1,13 @@
+Cosas completadas
+
+    Hice que se vean todos los datos de forma de grid 🟢 
+    añadir objetos y poner controles de segurar para evitar datos null o vacios 🟢 
+
+
+cosas a hacer
+
+    index con 3 objetos mas vendidos, 3 objtos mas baratos, 3 objetos (a nose) 🔴
+    poner una pagina con todo lo que venga ser la venta de objetos asi como el control de stock 🔴
+    poner en la misma pagina de añadir la forma de eliminar los objetos 🔴
+
+    Y no se que mas me duele la cabeza 🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴
