@@ -8,10 +8,19 @@ function tablas() {
     grid.className = 'grid';
     contenedor.appendChild(grid);
 
+    //funcion para selecionar un producto
+    const Selecionador = (nombre) => {
+        document.querySelector('.nombreData').value = nombre
+    }
+
     // Crear una contGrid para cada objeto en recuperacionObjeto
-    recuperacionObjeto.forEach(element => {
+    recuperacionObjeto.forEach((element, i) => {
         const contGrid = document.createElement('div');
-        contGrid.className = 'contGrid';
+        contGrid.className = `contGrid`;
+        contGrid.id = `elementos${i}`;
+
+
+
 
         contGrid.innerHTML = `
             <img src="${element.img}" alt="Imagen de ${element.descripcion}">
@@ -26,6 +35,10 @@ function tablas() {
         `;
 
         grid.appendChild(contGrid);
+
+        //funcion para selecionar un producto
+        contGrid.addEventListener("click", () => { Selecionador(element.nombre) })
+        contGrid.tabIndex = i
     });
 }
 

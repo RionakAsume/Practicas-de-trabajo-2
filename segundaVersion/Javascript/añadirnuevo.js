@@ -15,7 +15,12 @@ function crearDatos() {
 
         const respuesta = document.querySelector(".mensaje")
 
-       
+        respuesta.innerHTML = "";
+
+        if (nombre === "" || descripcion === "" || precio === "" || categoria === "" || proveedor === "" || cantidadStock === "" || img === "") {
+            respuesta.innerHTML = `se a añadido exitosamente`
+            return;
+        }
 
         if (isNaN(precio) || isNaN(cantidadStock) || parseFloat(precio) <= 0 || parseInt(cantidadStock) <= 0) {
             respuesta.innerHTML = `Precio y cantidad de stock deben ser números válidos mayores a 0.`;
@@ -40,8 +45,10 @@ function crearDatos() {
 
         localStorage.setItem('Prueba', JSON.stringify(recuperacionObjeto));
 
+        //Reseteo del formulario
         document.getElementById('productoForm').reset();
         respuesta.innerHTML = `se a añadido exitosamente`
+
     }
 
     );
