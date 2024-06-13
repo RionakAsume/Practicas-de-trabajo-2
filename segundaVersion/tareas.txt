@@ -3,6 +3,9 @@ Cosas completadas
     Hice que se vean todos los datos de forma de grid 🟢 
     añadir objetos y poner controles de segurar para evitar datos null o vacios 🟢 
 
+    Selecion de objetos a travez del grid 🟢 
+    Eliminacion de los objetos 🟢 
+
 
 cosas a hacer
 
@@ -10,4 +13,12 @@ cosas a hacer
     poner una pagina con todo lo que venga ser la venta de objetos asi como el control de stock 🔴
     poner en la misma pagina de añadir la forma de eliminar los objetos 🔴
 
-    Y no se que mas me duele la cabeza 🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴
+    Implementar codigo para evitar el regiter vacio o el doble registro de un dato 🔴
+    Crear por defecto un "ADMIN" para que solo el pueda interactuar con los objetos en el CRUD🔴
+
+    Modificacion de los objetos🔴
+
+
+
+
+

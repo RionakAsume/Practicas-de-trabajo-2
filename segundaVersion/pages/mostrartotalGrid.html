@@ -66,7 +66,12 @@
           
             display: flex;
             justify-content: center;
-            margin: 0;
+           
+        }
+        .mensajeError{
+            height: 15px;
+            color: red;
+            font-weight: bold;
         }
 
         .soloboton {
@@ -129,12 +134,13 @@
             <div class="padreGrid"></div>
         </div>
 
-        <p class="padreMensaje"><span class="mensajeError">asdasd</span></p>
+        <p class="padreMensaje"><span class="mensajeError"></span></p>
 
         <div class="soloboton">
 
             <div class="añadir">
-                <button class="eliminarSeleccionado">Eliminar Seleccionado</button>
+                <button onclick="eliminarDatos()" class="eliminarSeleccionado">Eliminar Seleccionado</button>
+                <button  class="modificarSeleccionado">Modificar Selecionado</button>
                 <a class="botn" href="./añadirnuevo.html">Añadir nuevo</a>
             </div>
 
@@ -145,8 +151,9 @@
     </section>
 
 
-    <script src="./grid.js"></script>
-    <script src="./Pruebasdegeneracionesdeobjetosgrid.js"></script>
+    <script src="../Javascript/grid.js"></script>
+    <script src="../Javascript/Pruebasdegeneracionesdeobjetosgrid.js"></script>
+    <script src="../Javascript/eliminarObjetos.js"></script>
 </body>
 
 </html>

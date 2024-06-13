@@ -1,5 +1,6 @@
 
 function tablas() {
+
     const recuperacionObjeto = JSON.parse(localStorage.getItem("Prueba"));
     const contenedor = document.querySelector(".padreGrid");
 
@@ -10,7 +11,11 @@ function tablas() {
 
     //funcion para selecionar un producto
     const Selecionador = (nombre) => {
-        document.querySelector('.nombreData').value = nombre
+        const selecion = document.querySelector('.nombreData').value = nombre
+
+        localStorage.setItem("elementoSelecionado", (selecion))
+
+
     }
 
     // Crear una contGrid para cada objeto en recuperacionObjeto
@@ -39,7 +44,13 @@ function tablas() {
         //funcion para selecionar un producto
         contGrid.addEventListener("click", () => { Selecionador(element.nombre) })
         contGrid.tabIndex = i
+
+
+    
     });
+
+
+
 }
 
 tablas();
