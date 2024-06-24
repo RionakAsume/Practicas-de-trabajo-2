@@ -40,5 +40,9 @@ function datosaRegistrar(event) {
 
 if (!localStorage.getItem("Registrados")) {
     const registrados = new Array();
+    let admin = new Array(2)
+    admin[0]= "admin"
+    admin[1]= "admin"
+    registrados.push(admin);
     localStorage.setItem("Registrados", JSON.stringify(registrados));
 }
