@@ -1,0 +1,146 @@
+.Contenible {
+    width: 100%;
+    display: flex;
+
+
+    flex-direction: column;
+}
+
+.Sologrid {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.padreGrid {
+    width: 80%;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+}
+
+.contGrid {
+    width: 100%;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    border: 2px black solid;
+
+}
+
+.contGrid:hover {
+    border-color: green;
+    box-shadow: 0px 0px 25px rgb(1, 54, 1);
+}
+
+.contGrid:focus {
+    border-color: green;
+    box-shadow: 0px 0px 25px rgb(1, 54, 1);
+}
+
+.contendido {
+    width: 50%;
+}
+
+img {
+    width: 50%;
+    height: 130px;
+    margin-top: 10px;
+}
+
+.padreMensaje {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.mensajeError {
+    height: 15px;
+    color: red;
+    font-weight: bold;
+}
+
+.soloboton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.añadir {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.botn {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 40%;
+    text-decoration: none;
+
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.botn:hover {
+    background-color: #0056b3;
+}
+
+.botn:active {
+    background-color: #004494;
+}
+
+.botn:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+
+
+
+.padreFormulario{
+    width: 100%;
+
+}
+.contform{
+    width: 100%;
+
+}
+
+.formparacrear{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+ }
+
+ form{
+    width: 20%;
+    display: flex;
+
+    flex-direction: column;
+
+}
