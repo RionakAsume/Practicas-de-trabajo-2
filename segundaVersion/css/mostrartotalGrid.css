@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .Contenible {
     width: 100%;
     display: flex;
@@ -143,4 +148,17 @@ img {
 
     flex-direction: column;
 
+}
+
+
+header{
+    width: 100%;
+    background-color: #0056b3;
+    height: 50px;
+}
+
+article{
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
 }
