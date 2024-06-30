@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/registro.css">
+</head>
+<body>
+    <div class="registro">
+        <h2>Registro de Usuario</h2>
+        <form action="/registro" method="post">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+
+            
+            <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+         
+            <input type="email" id="email" name="email" placeholder="Correo" required>
+
+            <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña" required>
+
+            <input type="text" id="nombre-usuario" name="nombre-usuario" placeholder="Nombre Usuario" required>
+
+            <button type="submit">Registrarse como Administrador</button>
+            <button type="submit">Registrarse como Nuevo Usuario</button>
+
+        </form>
+        <div class="login-link">
+            <p>¿Ya tienes una cuenta?</p>
+            <a href="./login.html" class="loginLink">Inicia sesión</a>
+        </div>
+    </div>
+</body>
+</html>
