@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/index.css">
 </head>
+
 <body>
     <header>
         <h1>BIENVENIDOS A NUESTRA TIENDA</h1>
         <nav>
             <ul>
-            
+
                 
                 <li><a href="./carrito.html"><img class="icon" src="/img/carrito-de-compras.png"></a></li>
                 <li><a href="./login.html"><img class="icon" src="/img/editar.png"></a></li>
@@ -19,8 +21,25 @@
             </ul>
         </nav>
     </header>
-
     <article><button onclick="recuperaCompraObjetos()">añadir al carro</button> <a href="../pages/compraCarro.html">ICONO CARRO</a></article>
+    
+    <section class="Contenible">
+        <div class="Sologrid">
+
+            <div class="padreGrid"></div>
+        </div>
+
+        <p class="padreMensaje"><span class="mensajeError"></span></p>
+
+        <div class="soloboton">
+            <div class="padreFormulario">
+
+            </div>
+            <form>
+                <input type="hidden" name="nombre" class="nombreData">
+            </form>
+    </section>
+
 
     <!-- <main>
         <h2 class="animacion-de-texto">Lo Mas Vendidos</h2>
@@ -163,11 +182,11 @@
         </form>
 
     </main> -->
-   
+
     <footer>
-            <a href=""><img class="icon" src="/img/gorjeo.png"></a>
-            <a href=""><img class="icon" src="/img/social.png"></a>
-            <a href=""><img class="icon" src="/img/instagram.png"></a>
+        <a href=""><img class="icon" src="/img/gorjeo.png"></a>
+        <a href=""><img class="icon" src="/img/social.png"></a>
+        <a href=""><img class="icon" src="/img/instagram.png"></a>
     </footer>
 
 
@@ -176,4 +195,5 @@
     <script src="../Javascript/añadirCarro.js"></script>
     <script src="../Javascript/añadirCarro.js"></script>
 </body>
+
 </html>
