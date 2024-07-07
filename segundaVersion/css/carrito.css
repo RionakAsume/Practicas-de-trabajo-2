@@ -1,0 +1,147 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(70deg, #CC4712,#cc662409);
+    background-color: #3711c4;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px black;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: rgb(238, 228, 75);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+nav ul li a:active {
+    position: relative;
+    top: 3px;
+    box-shadow: 0px 3px 0 #819F45;
+    transform: scale(0.95);
+}
+
+main {
+    padding: 2rem;
+}
+
+.carrito {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px black;
+}
+
+.carrito h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.producto-carrito {
+    border-bottom: 1px solid gainsboro;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border:ridge;
+    
+}
+
+.producto-carrito:last-child {
+    border-bottom: none;
+}
+
+.producto-detalles {
+    display: flex;
+    align-items: center;
+}
+
+.producto-detalles img {
+    width: 200px; 
+    height: 150px; 
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 1rem;
+    box-shadow: 0 2px 5px black; 
+}
+
+.producto-info {
+    text-align: left;
+}
+
+.producto-info h3 {
+    margin: 0;
+    font-size: 1.5rem; 
+}
+
+.producto-info p {
+    margin: 0.5rem 0;
+    color: gray;
+    font-size: 1rem;
+}
+
+.btn-eliminar {
+    background-color: #f44336;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-eliminar:hover {
+    background-color: #d32f2f;
+}
+
+.total {
+    margin-top: 2rem;
+    text-align: right;
+}
+
+.total h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.btn-comprar {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-comprar:hover {
+    background-color: #45a049;
+}
+
+.icon{max-width: 30px;}
+
+footer{ display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;}
