@@ -4,11 +4,16 @@
     padding: 0;
 }
 
-body{
-    background-image: url("../img/fondaso.jpg");
-    background-position:center;
+body {
+    background-image: url(../img/fondaso.jpg);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
 }
 header {
+    width: 100%;
     height: 15vh;
     background: linear-gradient(70deg, #c62828,#cc662409);
     background-color: #242c4f;
@@ -29,8 +34,7 @@ header {
 .animacion-de-texto {
     animation-name: deslizar;
     animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    animation-iteration-count: 0.42;
     color: #fefdcf;
     text-shadow: 2px 2px 1px #000000;;
 }
@@ -56,7 +60,7 @@ h2:hover {
 }
 
 header h1 {
-    margin: 0;
+    padding: 0px 80px 0px 80px;
     font-size: 3rem;
 }
 
@@ -109,74 +113,18 @@ nav ul li a:active {
 
 
 
-.productos {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(250px, 1fr));
-    gap: 2rem;
-}
-
-
-.producto {
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px black;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.producto:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px black;
-}
-
-.producto img {
-    width: 200px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-}
-
-.producto:hover img {
-    transform: scale(1.1);
-}
-
-.producto h3 {
+h3 {
     margin: 1rem 0 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
-.producto p {
-    color: #888;
+p {
+    color: black;
     font-size: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
-.btn-agregar {
-    color: #ffffff;
-    font-size: 18px;
-    padding: 10px 20px;
-    background: linear-gradient(to bottom,#3e5a7e,#242c4f);
-    border-radius: 10px;
-    text-shadow: 1px 1px 1px #a6d5fe;
-    box-shadow: 0px 6px 0 #2b3519;
-    transition: transform 0.2s ease;
-}
 
-.btn-agregar:hover {
-    background-color: #45a049;
-}
-
-form {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    gap: 10px;
-    margin-top: 40px;
-}
 
 input[type="text"] {
     padding: 10px;
@@ -201,50 +149,67 @@ input[type="submit"]:hover {
 
 footer {
     display: flex;
-    justify-content: center;
+    width: 20%;
     align-items: center;
-    gap: 100px;
-
+ 
+    justify-content: space-evenly;
 }
 
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 .Contenible {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+
 }
 
 .Sologrid {
-
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .padreGrid {
-
     width: 80%;
     display: flex;
     gap: 20px;
     flex-direction: column;
-    align-items: center;
 }
 
 .padreGrid>section {
-    width: 100%;
-    /* Ancho de cada sección, menos el espacio entre ellas */
     flex-grow: 1;
-    /* Permitir que las secciones crezcan si hay espacio disponible */
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
+
+.categoria-especifica{
+ 
+    width: 100%;
+    align-items: center;
+    
+    justify-content: center;
+    gap: 10px;
+
+}
+.mas-barato{
+  
+    width: 100%;
+    align-items: center;
+
+    justify-content: center;
+    gap: 10px;
+
+}
+.buscador{
+    width: 100%;
+    align-items: center;
+
+    justify-content: center;
+    gap: 10px;
+}
+
 
 .grid {
     display: grid;
@@ -254,16 +219,15 @@ footer {
 }
 
 .contGrid {
-    width: 100%;
+    width: 30%;
     min-width: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-
     border: 2px black solid;
-    background-color: white;
-
+    background-color: #fefdcf;
+    flex-direction: column;
+    box-shadow: 0 4px 8px black;
 }
 
 .contGrid:hover {
@@ -277,15 +241,18 @@ footer {
 }
 
 .contendido {
-    width: 50%;
+    width: 75%;
+    margin-bottom: 20px;
 }
 
 .imagenGrid {
-    width: 50%;
-    height: 130px;
+    width: 80%;
+    height: 235px;
     margin-top: 10px;
+    border: solid 1px black;
+    margin-bottom: 10px; 
+    border-radius: 8px;
 }
-
 .padreMensaje {
 
     display: flex;
@@ -299,3 +266,18 @@ footer {
     font-weight: bold;
 }
 
+.padrecontGrid{
+    width: 80%;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+
+.resultadoContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+    gap: 15px;
+}

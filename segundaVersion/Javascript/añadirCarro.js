@@ -5,7 +5,7 @@ function recuperaCompraObjetos() {
   listaDeCompras.push(selecArticulo);
     localStorage.setItem("listaDeCompras", JSON.stringify (listaDeCompras));
   
-
+  alert(`Se añadio ${selecArticulo} al carro de compras`)
 }
 if (!localStorage.getItem("listaDeCompras")) {
     localStorage.setItem("listaDeCompras", JSON.stringify([]));
