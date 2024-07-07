@@ -27,7 +27,7 @@ function tablas() {
 
 
         contGrid.innerHTML = `
-            <img src="${element.img}" alt="Imagen de ${element.descripcion}">
+            <img class="imagenGrid" src="${element.img}" alt="Imagen de ${element.descripcion}">
             <div class="contendido">
                 <p>Producto: ${element.nombre}</p>
                 <p>Descripcion: ${element.descripcion}</p>
