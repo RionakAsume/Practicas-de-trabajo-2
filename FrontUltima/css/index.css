@@ -18,6 +18,7 @@ header {
     text-align: center;
     text-shadow: 2px 2px 1px #000000;;
 }
+
 .animacion-de-texto {
     animation-name: deslizar;
     animation-duration: 3s;
