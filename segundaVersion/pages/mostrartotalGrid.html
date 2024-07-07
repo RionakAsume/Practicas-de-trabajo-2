@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total Productos</title>
+    <link rel="stylesheet" href="../css/mostrartotalGrid.css">
+    
+</head>
+
+<body>
+    <header></header>
+    <article><button onclick="recuperaCompraObjetos()">añadir al carro</button> <a href="../pages/compraCarro.html">ICONO CARRO</a></article>
+    <section class="Contenible">
+        <div class="Sologrid">
+
+            <div class="padreGrid"></div>
+        </div>
+
+        <p class="padreMensaje"><span class="mensajeError"></span></p>
+
+        <div class="soloboton">
+
+            <div class="añadir">
+                <button onclick="eliminarDatos()" class="eliminarSeleccionado">Eliminar Seleccionado</button>
+                <button onclick="generarFormulario()" class="modificarSeleccionado">Modificar Selecionado</button>
+                <a class="botn" href="./añadirnuevo.html">Añadir nuevo</a>
+            </div>
+
+        </div>
+        <div class="padreFormulario">
+
+        </div>
+        <form>
+            <input type="hidden" name="nombre" class="nombreData">
+        </form>
+    </section>
+
+
+    <script src="../Javascript/grid.js"></script>
+    <script src="../Javascript/Pruebasdegeneracionesdeobjetosgrid.js"></script>
+    <script src="../Javascript/eliminarObjetos.js"></script>
+    <script src="../Javascript/modificarObjetos.js"></script>
+    <script src="../Javascript/añadirCarro.js"></script>
+</body>
+
+</html>
