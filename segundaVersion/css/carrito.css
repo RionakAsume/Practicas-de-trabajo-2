@@ -65,17 +65,53 @@ nav ul li a:active {
 main {
     padding: 0 2rem 0 2rem;
 }
+.eliminar{
+    margin: 5px;
+}
 
-.carrito {
+.eliminar button{
+    background-color: #c62828;
+    color: aliceblue;
+    width: 20px;
+}
+
+
+.tucarrito {
     background-color: white;
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px black;
+    gap: 10px;
+    
 }
 
-.carrito h2 {
+.tucarrito h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
+}
+
+.tuCompra{
+    width: 100%;
+    height: 32vh;
+    margin-top: 10px;
+    border: solid 1px black;
+    margin-bottom: 10px; 
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    align-items:flex-start ;
+    justify-content: space-between;
+}
+
+.tuCompra img{
+    width: 200px;
+    height: 180px;
+    margin: 5px;
+}
+
+.contendido{
+    width: 75%;
+
 }
 
 .producto-carrito {
