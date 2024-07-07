@@ -1,4 +1,5 @@
-*{ box-sizing: border-box;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -11,32 +12,42 @@ body {
 }
 
 header {
-    background: linear-gradient(70deg, #CC4712,#cc662409);
+    background: linear-gradient(70deg, #CC4712, #cc662409);
     background-color: #3711c4;
     color: white;
     padding: 1rem 0;
     text-align: center;
     box-shadow: 0 2px 5px black;
 }
+
 .animacion-de-texto {
     animation-name: deslizar;
     animation-duration: 3s;
-    animation-iteration-count:1;
+    animation-iteration-count: 1;
     animation-fill-mode: forwards;
     color: rgb(238, 228, 75);
 }
-h2{
+
+h2 {
     font-size: 3rem;
 
 }
+
 @keyframes deslizar {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(40%); }
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(40%);
+    }
 }
+
 h2:hover {
-    transform: scale(1.1); 
-    transition: transform 0.3s ease; 
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
+
 header h1 {
     margin: 0;
     font-size: 2.5rem;
@@ -49,11 +60,13 @@ nav ul {
 }
 
 nav ul li {
-    display: inline-block; 
+    display: inline-block;
     margin-right: 1rem;
 }
 
-.icon{max-width: 30px;}
+.icon {
+    max-width: 30px;
+}
 
 nav ul li a:active {
     position: relative;
@@ -66,7 +79,7 @@ main {
     padding: 2rem;
     background-image: url("../img/fondaso.jpg");
     background-position: relative;
-   
+
 }
 
 .productos {
@@ -84,9 +97,9 @@ main {
     background-color: white;
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 4px 8px black; 
+    box-shadow: 0 4px 8px black;
     text-align: center;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
 }
 
 .producto:hover {
@@ -95,20 +108,20 @@ main {
 }
 
 .producto img {
-    width: 200px; 
-    height: 150px; 
+    width: 200px;
+    height: 150px;
     object-fit: cover;
     border-radius: 8px;
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
 }
 
 .producto:hover img {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
 .producto h3 {
     margin: 1rem 0 0.5rem;
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
 }
 
 .producto p {
@@ -142,6 +155,7 @@ form {
     gap: 10px;
     margin-top: 40px;
 }
+
 input[type="text"] {
     padding: 10px;
     font-size: 16px;
@@ -149,6 +163,7 @@ input[type="text"] {
     border-radius: 4px;
     flex-grow: 1;
 }
+
 input[type="submit"] {
     padding: 11px 20px;
     font-size: 16px;
@@ -157,23 +172,26 @@ input[type="submit"] {
     border: none;
     border-radius: 4px;
 }
+
 input[type="submit"]:hover {
     background-color: #0056b3;
 }
 
-footer{ display: flex;
+footer {
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 100px;
-    
+
 }
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 .Contenible {
     width: 100%;
     display: flex;
@@ -190,11 +208,24 @@ footer{ display: flex;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .padreGrid {
-    width: 80%;
 
+    width: 80%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.padreGrid>section {
+    width: 100%;
+    /* Ancho de cada sección, menos el espacio entre ellas */
+    flex-grow: 1;
+    /* Permitir que las secciones crezcan si hay espacio disponible */
+    display: flex;
 }
 
 .grid {
@@ -249,3 +280,4 @@ footer{ display: flex;
     color: red;
     font-weight: bold;
 }
+
