@@ -1,0 +1,168 @@
+*{ box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.6;
+    background: url("../img/WhatsApp\ Image\ 2024-06-29\ at\ 13.27.01.jpeg");
+
+}
+
+
+header {
+    background: linear-gradient(70deg, #c62828,#cc662409);
+    background-color: #242c4f;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    text-shadow: 2px 2px 1px #000000;;
+}
+.animacion-de-texto {
+    animation-name: deslizar;
+    animation-duration: 3s;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+    color: #fefdcf;
+    text-shadow: 2px 2px 1px #000000;;
+}
+
+h2{
+    font-size: 3rem;
+
+}
+@keyframes deslizar {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(1fr); }
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block; 
+    margin-right: 1rem;
+}
+
+.icon{max-width: 30px;}
+
+nav ul li a:active {
+    position: relative;
+    top: 3px;
+    box-shadow: 0px 3px 0 #819F45;
+    transform: scale(0.95);
+}
+
+main {
+    padding: 2rem;
+    background-image: url(/img/fondaso.jpg);
+    background-position: relative;
+   
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+
+
+
+
+
+.producto {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px black; 
+    text-align: center;
+    transition: all 0.3s ease; 
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px black;
+}
+
+.producto img {
+    width: 200px; 
+    height: 150px; 
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease; 
+}
+
+.producto:hover img {
+    transform: scale(1.1); 
+}
+
+.producto h3 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.5rem; 
+}
+
+.producto p {
+    color: #888;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-agregar {
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px 20px;
+    background: linear-gradient(to bottom,#3e5a7e,#242c4f);
+    border-radius: 10px;
+    text-shadow: 1px 1px 1px #a6d5fe;
+    box-shadow: 0px 6px 0 #2b3519;
+    transition: transform 0.2s ease;
+}
+
+.btn-agregar:hover {
+    background-color: #45a049;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+}
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex-grow: 1;
+}
+input[type="submit"] {
+    padding: 11px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+}
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+footer{ display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    
+}
