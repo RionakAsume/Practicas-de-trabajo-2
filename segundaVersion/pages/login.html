@@ -3,19 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Sesión</title>
+    <title>Inicio de Sesión</title>
     <link rel="stylesheet" href="../css/login.css">
+    <style>
+     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h2>Iniciar Sesión</h2>
-        <form id="logearse">
-            <input type="text" name="username" placeholder="Correo Electrónico" required id="mail1">
-            <input type="password" name="password" placeholder="Contraseña" required id="contrasenia1">
+    <div class="login">
+        <h1>Iniciar Sesión</h1>
+        <form action="/login" method="post" id="logearse">
+            <input type="text" id="mail1" name="username" placeholder="Correo Electrónico" required>
+            
+            <input type="password" id="contrasenia1" name="password" placeholder="Contraseña" required>
+            
             <input type="submit" value="Iniciar Sesión" id="btnParaLogear">
+     
         </form>
+        <div class="registro">
+            <p>¿No tienes una cuenta?</p>
+            <a href="./registro.html" class="boton-registro">Crear una cuenta</a>
+        </div>
     </div>
-
+    <!-- <body>
+        <div class="container">
+            <h2>Iniciar Sesión</h2>
+            <form id="logearse">
+                <input type="text" name="username" placeholder="Correo Electrónico" required id="mail1">
+                <input type="password" name="password" placeholder="Contraseña" required id="contrasenia1">
+                <input type="submit" value="Iniciar Sesión" id="btnParaLogear">
+            </form>
+        </div>
+    
+        
+    </body> -->
     <script src="../Javascript/login.js"></script>
 </body>
 </html>
