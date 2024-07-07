@@ -1,9 +1,13 @@
+*{ box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background-color: white;
-    margin: 0;
-    padding: 0;
+    background: url("../img/WhatsApp\ Image\ 2024-06-29\ at\ 13.27.01.jpeg");
+
 }
 
 header {
