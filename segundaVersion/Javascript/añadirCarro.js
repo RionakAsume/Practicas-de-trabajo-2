@@ -10,3 +10,4 @@ function recuperaCompraObjetos() {
 if (!localStorage.getItem("listaDeCompras")) {
     localStorage.setItem("listaDeCompras", JSON.stringify([]));
   }
+

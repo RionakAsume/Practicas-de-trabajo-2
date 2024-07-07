@@ -1,36 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carrito de Compras</title>
-    <link rel="stylesheet" href="../css/carrito.css">
-    
-
-</head>
-<body class="pagina-carrito">
+    <link rel="stylesheet" href="../css/carrito.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+  </head>
+  <body class="pagina-carrito">
     <header>
-        <h1>Tu Carrito de Compras</h1>
-        <nav>
-            <ul>
-                <li><a href="./index.html"><img class="icon" src="../img/pagina-de-inicio.png"></a></li>
-            </ul>
-        </nav>
+      <img
+        class="logo"
+        src="../img/0004691_Logo SVG_LCDA_azultrans.png"
+        alt="Logo"
+      />
+      <h1>Tu Carrito de Compras</h1>
     </header>
+    <nav class="inicio">
+      <a href="./index.html"
+        ><img class="icon" src="../img/pagina-de-inicio.png"
+      /></a>
+    </nav>
     <main>
-        <section class="carrito">
-            <h2>Productos en tu Carrito</h2>
-        </section>
-        <div class="total">
-            <h3>Total: $0</h3>
-            <button class="btn-comprar">Comprar Ahora</button>
-        </div>
+      <h2>Productos en tu Carrito</h2>
+      <section class="carrito"></section>
+      <div class="total">
+        <h3>Total: $0</h3>
+        <button class="btn-comprar">Comprar Ahora</button>
+      </div>
     </main>
     <footer>
-        <a href=""><img class="icon" src="../img/gorjeo.png"></a>
-        <a href=""><img class="icon" src="../img/social.png"></a>
-        <a href=""><img class="icon" src="../img/instagram.png"></a>
-</footer>
-<script src="/js/index.js" defer></script>
-</body>
+      <a href=""><img class="icon" src="../img/gorjeo.png" /></a>
+      <a href=""><img class="icon" src="../img/social.png" /></a>
+      <a href=""><img class="icon" src="../img/instagram.png" /></a>
+    </footer>
+    <script src="../js/carro" defer></script>
+  </body>
 </html>

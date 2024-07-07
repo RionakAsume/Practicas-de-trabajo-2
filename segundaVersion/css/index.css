@@ -121,7 +121,6 @@ h3 {
 p {
     color: black;
     font-size: 1rem;
-    margin-bottom: 1rem;
 }
 
 
@@ -247,7 +246,7 @@ footer {
 
 .imagenGrid {
     width: 80%;
-    height: 235px;
+    height: 180px;
     margin-top: 10px;
     border: solid 1px black;
     margin-bottom: 10px; 
